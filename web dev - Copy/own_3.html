@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-compatible" content="IE-eddge">
+      <meta name="viewport" content = "width:device-width , intial-scale=1.0">
+      <meta name="keyword" content="Aniamtion using html and css">
+          <title>Animation</title>
+        <meta charset="UTF-8">
+        <style>
+        #main {
+width:1200px;
+height:350px;
+border-color:2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+            .title{
+                text-align:center;
+                color:rgb(255, 255, 255);
+                      background-color:lightblue;
+                border-color: bisque;
+                width:100%;
+            }
+
+           #main div{
+                width:100px;
+                height: 100px;
+                animation-iteration-count:infinite;
+                animation-delay:1s;
+                position :relative;
+                animation-play-state:play;
+                /*animation-fill-mode: forwards;*/
+           }
+            
+            #div1{
+                display:none;
+             animation-duration:0.3s;
+             animation-direction:forward;
+            animation-name:d;
+            }
+             #div2{
+               display:none;
+              animation-duration:0.5s;
+             animation-direction:alternative;
+            animation-name:i;
+            }
+             #div3{
+                display:none;
+              animation-duration:0.3s;
+              animation-direction:forward;
+            animation-name:l;
+            } #div4{
+             display:none;
+             animation-duration:0.7s;
+             animation-direction:forward;
+            animation-name:e;
+          
+            } #div5{
+              display:none;
+             animation-duration:0.7s;
+             animation-direction:forward;
+            animation-name:ep;
+            }
+             #div6{
+             display:none;
+             animation-duration:0.3s;
+             animation-direction:forward;
+            animation-name:p;
+            }
+            
+            .div7{
+
+              display:block!important;
+
+            }
+
+            
+            
+            
+            @keyframes d {
+                0%{background-color: black;left:0px;top:0px;transform:scale(1,1);}
+                25%{background-color:yellow;transform: rotate(20deg);left:200px;top:0px;transform:scale(0.75,0.75);}
+                50%{background-color:pink;transform:rotate(90deg);left:200px;top:200px;transform:scale(0.5,0.5);}
+                75%{background-color:blue;transform:rotate(135deg);left:0px;top:200px;transform:scale(0.25,0.25)}
+                100%{background-color:aqua;transform:rotate(180deg);left:0px;top:0px;transform:scale(0.1,0.1)}
+            }
+            
+            @keyframes i {
+                0%{background-color: black;left:220px;top:0px;transform:scale(0.1,0.1);}
+                25%{background-color:yellow;transform: rotate(20deg)left:220px;top:50px;transform:scale(0.5,0.5);}
+                50%{background-color:pink;transform:rotate(90deg);left:220px;top:100px;transform:scale(0.5,0.5);}
+                75%{background-color:blue;transform:rotate(135deg);left:220px;top:150px;transform:scale(0.5,0.5)}
+                100%{background-color:aqua;transform:rotate(180deg);left:220px;top:200px;transform:scale(0.5,0.5)}
+            }
+            @keyframes l {
+                0%{background-color: black;left:240px;top:0px;transform:scale(0.75,0.75);}
+                25%{background-color:yellow;transform: rotate(20deg);left:240px;top:100px;transform:scale(0.75,0.75);}
+                50%{background-color:pink;transform:rotate(90deg);left:240px;top:200px;transform:scale(0.5,0.5);}
+                75%{background-color:blue;transform:rotate(135deg);left:340px;top:200px;transform:scale(0.25,0.25)}
+                100%{background-color:aqua;transform:rotate(180deg);left:440px;top:200px;transform:scale(0.1,0.1)}
+            }
+           @keyframes e {
+                0%{background-color: black;left:660px;top:0px;transform:scale(0.75,0.75);}
+                16.6%{background-color: black;left:460px;top:0px;transform:scale(0.75,0.75);}
+                33.2%{background-color: black;left:460px;top:100px;transform:scale(0.75,0.75);}
+                
+                49.8%{background-color:yellow;transform: rotate(20deg);left:660px;top:100px;transform:scale(0.75,0.75);}
+                66.4%{background-color:pink;transform:rotate(90deg);left:460px;top:100px;transform:scale(0.5,0.5);}
+                75%{background-color:blue;transform:rotate(135deg);left:460px;top:200px;transform:scale(0.25,0.25)}
+                100%{background-color:aqua;transform:rotate(180deg);left:660px;top:200px;transform:scale(0.1,0.1)}
+            }
+            @keyframes ep {
+                0%{background-color:aqua;transform:rotate(180deg);left:880px;top:200px;transform:scale(0.1,0.1)}
+                16.6%{background-color:blue;transform:rotate(135deg);left:680px;top:200px;transform:scale(0.25,0.25)}
+                33.2%{background-color:pink;transform:rotate(90deg);left:680px;top:100px;transform:scale(0.5,0.5);}
+                
+                49.8%{background-color:yellow;transform: rotate(20deg);left:880px;top:100px;transform:scale(0.75,0.75);}
+                66.4%{background-color: black;left:680px;top:100px;transform:scale(0.75,0.75);}
+                75%{background-color: black;left:680px;top:0px;transform:scale(0.75,0.75);}
+                100%{background-color: black;left:880px;top:0px;transform:scale(0.75,0.75);}
+}
+                
+               @keyframes p {
+                0%{background-color: black;left:900px;top:200px;transform:scale(0.75,0.75);}
+                25%{background-color:yellow;transform: rotate(20deg);left:900px;top:0px;transform:scale(0.75,0.75);}
+                50%{background-color:pink;transform:rotate(90deg);left:1100px;top:0px;transform:scale(0.5,0.5);}
+                75%{background-color:blue;transform:rotate(135deg);left:1100px;top:100px;transform:scale(0.25,0.25)}
+                100%{background-color:aqua;transform:rotate(180deg);left:900px;top:100px;transform:scale(0.1,0.1)}
+            }
+            
+        </style>
+    </head>
+
+    <body>
+         
+           <div class="title"> <h1>ANIMATION</h1> </div>
+           
+           
+          
+           <div id="main" style="width:100%!important;">
+             <div  id ="div1" > </div>
+            
+             <div  id="div2"> </div>
+             
+              <div  id="div3"> </div>
+              
+               <div  id="div4" > </div>
+               
+                <div  id="div5"> </div>
+                
+                 <div  id="div6"> </div>
+                 
+             </div>
+
+             <div style="width:300px;height:100px;border-color:black;border-width:5px;border-style:solid;margin:10px;padding:10px">
+               <h3>for activating and Deactivating</h3>
+               <hr style="width:300px;height:5px;">
+             <button style="color:blue;" type="button" onclick="document.getElementById('div1').classList.toggle('div7')">D</button>
+              <button style="color:blue;"type="button" onclick="document.getElementById('div2').classList.toggle('div7')">I</button>
+              <button style="color:blue;" type="button" onclick="document.getElementById('div3').classList.toggle('div7')">L</button>
+              <button style="color:blue;" type="button" onclick="document.getElementById('div4').classList.toggle('div7')">E</button>
+              <button style="color:blue;" type="button" onclick="document.getElementById('div5').classList.toggle('div7')">E</button>
+              <button style="color:blue;" type="button" onclick="document.getElementById('div6').classList.toggle('div7')">P</button>
+              </div>
+                
+              
+      
+                       
+    </body>
+</html>  
+
+
+
